@@ -1,0 +1,102 @@
+
+
+body
+    font-family: 'Roboto', sans-serif
+    background: #eee
+    font-size: 14px
+    color: #000
+    margin: 0
+    padding: 0
+    width: 100vw
+    height: 100vh
+    overflow: hidden
+    &:before
+        content: ''
+        box-shadow: inset 0 0 0 20px #009966
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        pointer-events: none
+        z-index: 100
+.swiper-container 
+    width: 100%
+    height: 100%
+
+.swiper-slide
+    text-align: center
+    font-size: 18px
+    background: #fff
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100vh !important
+
+.swiper-scrollbar
+    right: 50px !important
+
+.swiper-pagination
+    right: 50px !important
+    .swiper-pagination-bullet-active
+        background: #009966 !important
+    .swiper-pagination-bullet
+        width: 12px
+        height: 12px
+        transition: background .2s
+        opacity: 1
+        background: #e0e0e0
+
+
+.main-header
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    z-index: 50
+    nav
+        display: flex
+        justify-content: center
+        align-items: center
+        background: white
+        position: relative
+        width: 100%
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.14)
+        height: 50px
+        top: 20px
+        a
+            display: inline-block
+            line-height: 50px
+            padding: 0 15px
+            color: #565656
+        a:hover
+            background-color: #eee
+    .logo
+        width: 140px
+        height: 100px
+        background: #009966
+        display: flex
+        justify-content: center
+        align-items: center
+        // position: absolute
+        // top: 0
+        pointer-events: none
+        user-select: none
+        position: relative
+        top: 25px
+        img
+            width: 80px
+
+
+
+// SLIDES
+.slide-1
+    background-image: url('../img/bg-o.jpg')
+    background-size: cover
+    background-position: center
+    h1
+        color: white
+        font-family: 'Playfair Display'
+        font-weight: 900
+        font-style: italic
