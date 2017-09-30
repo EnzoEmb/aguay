@@ -1,0 +1,135 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: #eee;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+body:before {
+  content: "";
+  -webkit-box-shadow: inset 0 0 0 20px #009966;
+          box-shadow: inset 0 0 0 20px #009966;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh !important;
+}
+
+.swiper-scrollbar {
+  right: 50px !important;
+}
+
+.swiper-pagination {
+  right: 50px !important;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #009966 !important;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  opacity: 1;
+  background: #e0e0e0;
+}
+
+.main-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 50;
+}
+.main-header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.14);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.14);
+  height: 50px;
+  top: 20px;
+}
+.main-header nav a {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 15px;
+  color: #565656;
+}
+.main-header nav a:hover {
+  background-color: #eee;
+}
+.main-header .logo {
+  width: 140px;
+  height: 100px;
+  background: #009966;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  top: 25px;
+}
+.main-header .logo img {
+  width: 80px;
+}
+
+.slide-1 {
+  background-image: url("../img/bg-o.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.slide-1 h1 {
+  color: white;
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-style: italic;
+}
