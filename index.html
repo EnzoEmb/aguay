@@ -5,15 +5,17 @@
     <link rel="shortcut icon" href="logo.ico">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/swiper.css">
-	<link rel="stylesheet" href="css/social/assets/css/bootstrap.css">
-    <link rel="stylesheet" href="css/social/assets/css/font-awesome.css">
-    <link rel="stylesheet" href="css/social/assets/css/docs.css">
-    <link rel="stylesheet" href="css/social/bootstrap-social.css">
+	<!-- <link rel="stylesheet" href="css/social/assets/css/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="css/social/assets/css/font-awesome.css"> -->
+    <!-- <link rel="stylesheet" href="css/social/assets/css/docs.css"> -->
+    <!-- <link rel="stylesheet" href="css/social/bootstrap-social.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
    	<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
-   	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   	<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+   	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
@@ -24,7 +26,7 @@
 	<header class="main-header">
 		<nav>
 			<div class="left">
-				<a><img src="img/descarga.svg"> Teléfono: +54 3446 42-2099</a>
+				<a class="telefono"><img src="img/telefono.svg"> Teléfono: +54 3446 42-2099</a>
 				<a href="#">Inicio</a>
 				<a href="#">Servicios</a>
 				<a href="#">Habitacion</a>
@@ -36,12 +38,14 @@
 				<a href="#">Ubicacion</a>
 				<a href="#">Tarifas</a>
 				<a href="#">Contacto</a>
-				<a href="https://twitter.com/hotelaguay" target="blank_" class="btn btn-social-icon btn-twitter">
-	                <span class="fa fa-twitter"></span>
-	            </a>
-	            <a href="https://www.facebook.com/hotelaguay" target="blank_" class="btn btn-social-icon btn-facebook">
-	                <span class="fa fa-facebook"></span>
-	            </a>
+				<div class="social">
+					<a href="https://twitter.com/hotelaguay" target="_blank" class="btn-social-icon btn-twitter">
+		                <span class="fa fa-twitter"></span>
+		            </a>
+		            <a href="https://www.facebook.com/hotelaguay" target="_blank" class="btn-social-icon btn-facebook">
+		                <span class="fa fa-facebook"></span>
+		            </a>
+	            </div>
 			</div>
 		</nav>
 	</header>
@@ -49,13 +53,20 @@
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide slide-1 slide-inicio" id="inicio">
+
+
+				
                <h1>Hotel copado</h1>
+
+
+
+
 		    </div>
 			<div class="swiper-slide slide-servicios"  id="servicios">
 			    	<h1>Aca va todo lo de servicios http://www.hotelaguay.com.ar/web/servicios</h1>
             </div>
 			<div class="swiper-slide slide-habitacion" id="habitacion">
-              <div style="width: 1000px;" id="myCarousel" class="carousel slide" data-ride="carousel">
+<!--               <div style="width: 1000px;" id="myCarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                    <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -109,7 +120,7 @@
                   <span class="glyphicon glyphicon-chevron-right"></span>
                   <span class="sr-only">Next</span>
                 </a>
-              </div>
+              </div> -->
             </div>
        
 			<div class="swiper-slide slide-ubicacion" id="ubicacion">
@@ -179,9 +190,9 @@ SUITE         $ 2100<br>
 
 
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/swiper.jquery.js"></script>
 	<script src="js/aguay.js"></script>
 </body>
