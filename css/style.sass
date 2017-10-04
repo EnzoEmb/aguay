@@ -346,6 +346,29 @@ body
 
 
 // BG FADE
+.slide-background
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    z-index: 1
+    transform-style: preserve-3d
+    backface-visibility: visible
+    .owl-stage-outer, .owl-stage, .owl-item
+        height: 100%
+    .item
+        height: 100%
+        background-size: cover
+        background-position: center
+
+//         position: absolute
+//         left: 0
+//         top: 0
+//         right: 0
+//         bottom: 0
+//         z-index: 500
+
 .bg-carousel
     position: absolute
     left: 0

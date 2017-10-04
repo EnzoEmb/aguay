@@ -484,6 +484,27 @@ body:before {
     background-image: url("../img/habitacion/3.jpg");
   }
 }
+.slide-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+}
+.slide-background .owl-stage-outer, .slide-background .owl-stage, .slide-background .owl-item {
+  height: 100%;
+}
+.slide-background .item {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-carousel {
   position: absolute;
   left: 0;

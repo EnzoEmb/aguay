@@ -1,10 +1,24 @@
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        direction: 'vertical',
-               // scrollbar: '.swiper-scrollbar',
-        // scrollbarHide: false,
-        slidesPerView: 1,
-        grabCursor: true,
-                mousewheelControl: true
-    });
+var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    direction: 'vertical',
+    // scrollbar: '.swiper-scrollbar',
+    // scrollbarHide: false,
+    slidesPerView: 1,
+    grabCursor: true,
+            mousewheelControl: true
+});
+
+$('.slide-background').owlCarousel({
+    animateOut: 'fadeOut',
+    items: 1,
+    smartSpeed: 450,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    freeDrag: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false,
+    loop: true
+});
