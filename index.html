@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <title>Hotel Aguay</title>
     <link rel="shortcut icon" href="logo.ico">
@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/swiper.css">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/social/assets/css/bootstrap.css">
     <link rel="stylesheet" href="css/social/assets/css/font-awesome.css">
     <link rel="stylesheet" href="css/social/assets/css/docs.css">
@@ -15,46 +14,47 @@
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
    	<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
    	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/stylefix.css">
 </head>
 <body>
 	<header class="main-header">
 		<nav>
-<a style="transform: translatex(-100%);"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDcwLjA3IDcwLjA3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA3MC4wNyA3MC4wNzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik02NS4wOTQsMzIuMTk1aC02Ljk4MmgtMC45MzRjLTIuMDY0LDAtMy43MzgsMS42NzQtMy43MzgsMy43NDV2MC40MDZjMCwyLjA3MywxLjY3NCwzLjc0OCwzLjc0MSwzLjc0OGg2Ljk4OWgwLjkyNCAgICBjMi4wNjgsMCwzLjc0Ny0xLjY4MiwzLjc0Ny0zLjc0OGwtMC4wMDQtMC40MTFDNjguODQxLDMzLjg2OSw2Ny4xNjIsMzIuMTk1LDY1LjA5NCwzMi4xOTV6IiBmaWxsPSIjMDAwMDAwIi8+CgkJPHBhdGggZD0iTTY1LjA5OCwyMi44NTJoLTEuNjQ5VjQuNzM0YzAtMi42MDQtMi4xMy00LjczNC00LjczNS00LjczNEgyNy40NzVjLTIuNjA0LDAtNC43MzQsMi4xMzEtNC43MzQsNC43MzR2MTIuOTk5ICAgIGMtNi4zMDEsMy41NjItMTIuOCw3LjI4My0xMi44MTQsNy4yOTJDNi4zOTksMjYuNDc3LDEuMjMsMzEuMTYyLDEuMjMsNDIuMjI1YzAsMC45ODgsMC4wNjUsMS45LDAuMTU2LDIuNzgxICAgIGMwLjAyOSwwLjI1OCwwLjA2MSwwLjUwNiwwLjA5NiwwLjc1NWMwLjA5MSwwLjY0NywwLjIwNSwxLjI2NiwwLjM0MSwxLjg1NGMwLjA0OSwwLjIxLDAuMDg3LDAuNDI5LDAuMTQsMC42MyAgICBjMC4xODMsMC42OCwwLjM5NSwxLjMxOCwwLjYzMywxLjkyNWMwLjEyLDAuMzAxLDAuMjUsMC41NzUsMC4zODEsMC44NTdjMC4xNCwwLjI5NywwLjI4MSwwLjU4OSwwLjQzMiwwLjg2MiAgICBjMC4xNzUsMC4zMjksMC4zNSwwLjY0NiwwLjU0MiwwLjk0N2MwLjA0NiwwLjA3LDAuMDk2LDAuMTM0LDAuMTQzLDAuMjA1YzQuNTU2LDYuODg3LDEyLjk2MSw2LjkxOCwxMi45NjEsNi45MThoNS42ODZ2NS4zNzkgICAgYzAsMi42MDEsMi4xMyw0LjczMSw0LjczNCw0LjczMWgzMS4yMzhjMi42MDUsMCw0LjczNS0yLjEzMSw0LjczNS00LjczMXYtNi41NjFoMC43MjJ2LTAuMDA0aDAuOTIxICAgIGMyLjA3MSwwLDMuNzUtMS42NzUsMy43NDYtMy43NDZsMC4wMDQtMC40MDhjLTAuMDA0LTIuMDY4LTEuNjc5LTMuNzM4LTMuNzQ3LTMuNzM4SDY0LjE3aC02LjA1OWgtMC45MzQgICAgYy0yLjA2OCwwLTMuNzM4LDEuNjc0LTMuNzM4LDMuNzQxdjAuNDE1YzAsMi4wNjIsMS42NzQsMy43NDMsMy43NDEsMy43NDNoMi45NzR2Mi41MzRoLTM0LjEyVjI3LjMyMyAgICBjMS43MTQtMS4wODcsMy4zMDEtMi4xMzMsNC4yMDYtMi44MzRjNC41ODUtMy41NDYsOC45MzctNi4zNyw5LjUyNi04LjkzMWMwLjc2Ny0zLjMyMy0xLjc4NC02LjEyMy02LjIwOS0zLjgyNCAgICBjLTEuMzk0LDAuNzI0LTQuMjU1LDIuMzExLTcuNTIzLDQuMTQ2VjcuNTAybDM0LjEyLDAuMDA1VjIyLjg1aC0yLjA0M3YwLjAwNGgtMC45MjljLTIuMDY5LDAtMy43NDgsMS42NzQtMy43NDgsMy43NDd2MC40MDYgICAgYzAsMi4wNzIsMS42NzksMy43NDIsMy43NDMsMy43NDJoMC45MjloNi4wNTloMC45MzFjMi4wNjYsMCwzLjc0MS0xLjY3NCwzLjc0MS0zLjc0MlYyNi41OSAgICBDNjguODQxLDI0LjUzMSw2Ny4xNjcsMjIuODUyLDY1LjA5OCwyMi44NTJ6IE00My4wOSw2Mi45NzZjMS4zMTIsMCwyLjM3LDEuMDU5LDIuMzcsMi4zNjhjMCwxLjMxMi0xLjA1OSwyLjM2Ny0yLjM3LDIuMzY3ICAgIGMtMS4zMDcsMC0yLjM2My0xLjA1OC0yLjM2My0yLjM2N0M0MC43MjksNjQuMDM5LDQxLjc4OCw2Mi45NzYsNDMuMDksNjIuOTc2eiBNNDguMDkzLDQuNTU4aC05Ljk5NiAgICBjLTAuMzE0LDAtMC41NzQtMC4yNTUtMC41NzQtMC41N2MwLTAuMzIsMC4yNi0wLjU3NSwwLjU3NC0wLjU3NWg5Ljk5NmMwLjMxNCwwLDAuNTcsMC4yNTQsMC41NywwLjU3NSAgICBDNDguNjYzLDQuMzAyLDQ4LjQwNyw0LjU1OCw0OC4wOTMsNC41NTh6IiBmaWxsPSIjMDAwMDAwIi8+CgkJPHBhdGggZD0iTTY1LjA5NCw0MS41MzhINjQuMTdoLTYuOTkyYy0yLjA2NCwwLTMuNzQzLDEuNjc5LTMuNzQzLDMuNzQ2djAuNDFjMCwyLjA2OSwxLjY3NSwzLjc0MywzLjc0MywzLjc0M2gwLjkyOWg2LjA1OWgwLjkyNiAgICBjMi4wNzEsMCwzLjc0MS0xLjY3NCwzLjc0Ni0zLjc0M3YtMC40MUM2OC44MzcsNDMuMjE3LDY3LjE2Nyw0MS41MzgsNjUuMDk0LDQxLjUzOHoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /> Tel&eacute;fono: +54 3446 42-2099</a>
-			<div class="left"  style="transform: translatex(-30%);">
-				<a href="#inicio">Inicio</a>
+			<div class="left">
+				<a><img src="img/descarga.svg"> Teléfono: +54 3446 42-2099</a>
+				<a href="#">Inicio</a>
 				<a href="#">Servicios</a>
 				<a href="#">Habitacion</a>
 			</div>
-			<div class="logo" style="transform: translatex(-50%);">
+			<div class="logo">
 				<img src="img/head.svg" alt="">
 			</div>
-			<div class="right" style="transform: translatex(-25%);">
+			<div class="right">
 				<a href="#">Ubicacion</a>
 				<a href="#">Tarifas</a>
 				<a href="#">Contacto</a>
+				<a href="https://twitter.com/hotelaguay" target="blank_" class="btn btn-social-icon btn-twitter">
+	                <span class="fa fa-twitter"></span>
+	            </a>
+	            <a href="https://www.facebook.com/hotelaguay" target="blank_" class="btn btn-social-icon btn-facebook">
+	                <span class="fa fa-facebook"></span>
+	            </a>
 			</div>
-<a style="transform: translatex(350%);" href="https://twitter.com/hotelaguay" target="blank_" class="btn btn-social-icon btn-twitter">
-                   <span class="fa fa-twitter"></span>
-                </a>
-                <a style="transform: translatex(400%);" href="https://www.facebook.com/hotelaguay" target="blank_" class="btn btn-social-icon btn-facebook">
-                   <span class="fa fa-facebook"></span>
-                </a>
 		</nav>
 	</header>
 
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
-			<div class="swiper-slide slide-1"  id="inicio">
+			<div class="swiper-slide slide-1 slide-inicio" id="inicio">
                <h1>Hotel copado</h1>
 		    </div>
-			<div class="swiper-slide"  id="servicios">
+			<div class="swiper-slide slide-servicios"  id="servicios">
 			    	<h1>Aca va todo lo de servicios http://www.hotelaguay.com.ar/web/servicios</h1>
             </div>
-			<div class="swiper-slide" id="habitacion">
+			<div class="swiper-slide slide-habitacion" id="habitacion">
               <div style="width: 1000px;" id="myCarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -112,10 +112,10 @@
               </div>
             </div>
        
-			<div class="swiper-slide" id="ubicacion">
+			<div class="swiper-slide slide-ubicacion" id="ubicacion">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836.4385893087994!2d-58.50566072979187!3d-33.01025111933166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa9d399541cb5%3A0xc656fc8a6848b1cd!2sHotel+Agua%C3%BD!5e0!3m2!1ses-419!2ses!4v1505005167984" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
-			<div class="swiper-slide" id="tarifas">http://www.hotelaguay.com.ar/web/tarifas
+			<div class="swiper-slide slide-tarifas" id="tarifas">http://www.hotelaguay.com.ar/web/tarifas
 <div id="seccion-tarifas">
 <pre style="background-color: transparent; color: white; position: absolute; top: 150px; left: 800px; z-index: 1; border: none; font-size: 1.5em; font-family: Century Schoolbook L; font-style: italic;">
 SINGLE    $ 1350<br>
@@ -125,7 +125,7 @@ CUADRUPLE  $ 2000<br>
 SUITE         $ 2100<br>
 </pre></div>
                 </div>
-			<div class="swiper-slide"  id="contacto">
+			<div class="swiper-slide slide-contacto"  id="contacto">
   
 <section id="contact">
 			<div class="section-content">

@@ -74,9 +74,7 @@ body:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -93,6 +91,7 @@ body:before {
   line-height: 50px;
   padding: 0 15px;
   color: #565656;
+  font-weight: 500;
 }
 .main-header nav a:hover {
   background-color: #eee;
@@ -117,6 +116,17 @@ body:before {
           user-select: none;
   position: relative;
   top: 25px;
+}
+.main-header .left{
+  width: 45%;
+  padding-right: 40px
+}
+.main-header .logo{
+  width: 150px
+}
+.main-header .right{
+  width: 45%;
+  padding-right: 50px
 }
 .main-header .logo img {
   width: 80px;
