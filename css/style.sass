@@ -1,4 +1,5 @@
 $f-pop: 'Poppins', sans-serif
+$c-green: #009966
 body
     font-family: 'Roboto', sans-serif
     background: #eee
@@ -48,6 +49,9 @@ body
         opacity: 1
         background: #e0e0e0
 
+.slide-content
+    position: relative
+    z-index: 10
 
 .main-header
     position: fixed
@@ -133,31 +137,31 @@ body
 // SLIDES
 .slide-inicio
     // background-image: url('../img/bg-o.jpg')
-    background-size: cover
-    background-position: center
-    background-repeat: no-repeat
-    animation-duration: 30s
-    animation-name: inicio-bg
-    animation-delay: 1
-    animation-iteration-count: infinite
-    animation-direction: forward
-    background-size: cover
+    background-color: $c-green
+    // background-size: cover
+    // background-position: center
+    // background-repeat: no-repeat
+    // animation-duration: 30s
+    // animation-name: inicio-bg
+    // animation-delay: 1
+    // animation-iteration-count: infinite
+    // animation-direction: forward
     h1
         color: white
         font-family: 'Playfair Display'
         font-weight: 900
         font-style: italic
 
-    @keyframes inicio-bg
-        0%
-            opacity: 1
-            background-image: url('../img/1.jpg')
-        50%
-            opacity: 1
-            background-image: url('../img/2.png')
-        100%
-            opacity: 1
-            background-image: url('../img/3.png')
+    // @keyframes inicio-bg
+    //     0%
+    //         opacity: 1
+    //         background-image: url('../img/1.jpg')
+    //     50%
+    //         opacity: 1
+    //         background-image: url('../img/2.png')
+    //     100%
+    //         opacity: 1
+    //         background-image: url('../img/3.png')
 
 
 
@@ -333,3 +337,61 @@ body
         100%
             opacity: 1
             background-image: url('../img/habitacion/3.jpg')
+
+
+
+
+
+
+
+
+// BG FADE
+.bg-carousel
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    // z-index: 0
+    .carousel-item, .carousel-inner
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        // z-index: 0
+    .carousel-item
+        background-size: cover
+        background-position: center
+        &:nth-child(1)
+            background-color: red
+        &:nth-child(2)
+            background-color: blue
+        &:nth-child(3)
+            background-color: yellow
+// Carousel fade transition
+// .carousel-fade 
+//     .carousel-item 
+//         display: block
+//         position: absolute
+//         opacity: 0
+//         transition: opacity .75s ease-in-out
+//         &.active
+//             opacity: 1
+//         &.carousel-item-left
+//             opacity: 1
+//         &.carousel-item-next
+//             opacity: 1 !important
+
+
+
+// .carousel-fade .carousel-inner > .item
+//     transition-property: opacity
+// .carousel-fade .carousel-inner > .item, .carousel-fade .carousel-inner > .item.active.left
+//     opacity: 0
+// .carousel-fade .carousel-inner > .item.active, .carousel-fade .carousel-inner > .item.next.left
+//     opacity: 1
+// .carousel-fade .carousel-inner > .next, .carousel-fade .carousel-inner > .prev, .carousel-fade .carousel-inner > .active.left, .carousel-fade .carousel-inner > .active.right
+//     left: 0
+// .carousel-fade .carousel-inner > .item.next, .carousel-fade .carousel-inner > .item.active.right, .carousel-fade .carousel-inner > .item.prev, .carousel-fade .carousel-inner > .item.active.left
+//     transform: translate3d(0, 0, 0)

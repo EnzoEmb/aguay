@@ -63,6 +63,11 @@ body:before {
   background: #e0e0e0;
 }
 
+.slide-content {
+  position: relative;
+  z-index: 10;
+}
+
 .main-header {
   position: fixed;
   left: 0;
@@ -175,20 +180,7 @@ body:before {
 }
 
 .slide-inicio {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-animation-duration: 30s;
-          animation-duration: 30s;
-  -webkit-animation-name: inicio-bg;
-          animation-name: inicio-bg;
-  -webkit-animation-delay: 1;
-          animation-delay: 1;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: forward;
-          animation-direction: forward;
-  background-size: cover;
+  background-color: #009966;
 }
 .slide-inicio h1 {
   color: white;
@@ -196,34 +188,7 @@ body:before {
   font-weight: 900;
   font-style: italic;
 }
-@-webkit-keyframes inicio-bg {
-  0% {
-    opacity: 1;
-    background-image: url("../img/1.jpg");
-  }
-  50% {
-    opacity: 1;
-    background-image: url("../img/2.png");
-  }
-  100% {
-    opacity: 1;
-    background-image: url("../img/3.png");
-  }
-}
-@keyframes inicio-bg {
-  0% {
-    opacity: 1;
-    background-image: url("../img/1.jpg");
-  }
-  50% {
-    opacity: 1;
-    background-image: url("../img/2.png");
-  }
-  100% {
-    opacity: 1;
-    background-image: url("../img/3.png");
-  }
-}
+
 .slide-servicios {
   background-size: cover;
   background-position: center;
@@ -518,4 +483,31 @@ body:before {
     opacity: 1;
     background-image: url("../img/habitacion/3.jpg");
   }
+}
+.bg-carousel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.bg-carousel .carousel-item, .bg-carousel .carousel-inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.bg-carousel .carousel-item {
+  background-size: cover;
+  background-position: center;
+}
+.bg-carousel .carousel-item:nth-child(1) {
+  background-color: red;
+}
+.bg-carousel .carousel-item:nth-child(2) {
+  background-color: blue;
+}
+.bg-carousel .carousel-item:nth-child(3) {
+  background-color: yellow;
 }
