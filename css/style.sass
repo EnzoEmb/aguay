@@ -1,5 +1,8 @@
 $f-pop: 'Poppins', sans-serif
 $c-green: #009966
+*
+    transform-style: preserve-3d
+    backface-visibility: hidden
 body
     font-family: 'Roboto', sans-serif
     background: #eee
@@ -353,8 +356,6 @@ body
     top: 0
     bottom: 0
     z-index: 1
-    transform-style: preserve-3d
-    backface-visibility: visible
     .owl-stage-outer, .owl-stage, .owl-item
         height: 100%
     .item

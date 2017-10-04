@@ -1,3 +1,10 @@
+* {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background: #eee;
@@ -491,10 +498,6 @@ body:before {
   top: 0;
   bottom: 0;
   z-index: 1;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-backface-visibility: visible;
-          backface-visibility: visible;
 }
 .slide-background .owl-stage-outer, .slide-background .owl-stage, .slide-background .owl-item {
   height: 100%;

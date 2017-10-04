@@ -22,3 +22,9 @@ $('.slide-background').owlCarousel({
     autoplayHoverPause: false,
     loop: true
 });
+
+$('.main-header .anchor-slide').on('click', function(e){
+    e.preventDefault();
+    var data = $(this).attr('slide');
+    swiper.slideTo(data);
+})
