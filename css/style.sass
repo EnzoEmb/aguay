@@ -1,4 +1,6 @@
 $f-pop: 'Poppins', sans-serif
+$f-play: 'Playfair Display', sans-serif
+$f-merri: 'Merriweather', serif
 $c-green: #009966
 *
     transform-style: preserve-3d
@@ -170,29 +172,77 @@ body
 
 .slide-servicios
     // background-image: url('../img/bg-o.jpg')
-    background-size: cover
-    background-position: center
-    background-repeat: no-repeat
-    animation-duration: 30s
-    animation-name: servicios-bg
-    animation-delay: 1
-    animation-iteration-count: infinite
-    animation-direction: forward
-    h1
+    // background-size: cover
+    // background-position: center
+    // background-repeat: no-repeat
+    // animation-duration: 30s
+    // animation-name: servicios-bg
+    // animation-delay: 1
+    // animation-iteration-count: infinite
+    // animation-direction: forward
+    h2
         color: white
-        font-family: 'Playfair Display'
+        font-family: $f-play
         font-weight: 900
         font-style: italic
-    @keyframes servicios-bg
-        0%
-            opacity: 1
-            background-image: url('../img/4.jpg')
-        50%
-            opacity: 2
-            background-image: url('../img/5.png')
-        100%
-            opacity: 1
-            background-image: url('../img/6.jpg')
+        font-size: 65px
+        line-height: 1.2em
+    h3
+        color: #58ffc7
+        font-size: 17px
+        max-width: 400px
+        margin: 0 auto 10px auto
+        line-height: 1.5em
+        font-family: $f-merri
+        font-style: italic
+    .servicios-container
+        max-width: 700px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        .item
+            margin-bottom: 20px
+            width: 15%
+            color: white
+            display: inline-block
+            padding: 15px
+            // background-color: rgba(0, 0, 0, 0.5)
+            border-right: 2px solid rgba(0, 0, 0, 0.5)
+            border-left: 2px solid rgba(0, 0, 0, 0.5)
+            border-bottom: 2px solid rgba(0, 0, 0, 0.5)
+            position: relative
+            &:after
+                content: ''
+                height: 2px
+                width: 35px
+                background-color: rgba(0, 0, 0, 0.5)
+                position: absolute
+                top: 0
+                left: 0
+            &:before
+                content: ''
+                height: 2px
+                width: 35px
+                background-color: rgba(0, 0, 0, 0.5)
+                position: absolute
+                top: 0
+                right: 0
+            img
+                max-width: 30px
+                margin-top: -55px
+            span
+                display: block
+                font-size: 15px
+    // @keyframes servicios-bg
+    //     0%
+    //         opacity: 1
+    //         background-image: url('../img/4.jpg')
+    //     50%
+    //         opacity: 2
+    //         background-image: url('../img/5.png')
+    //     100%
+    //         opacity: 1
+    //         background-image: url('../img/6.jpg')
 
 .slide-contacto
     background-size: cover
@@ -213,16 +263,16 @@ body
         background: rgba(0,0,0,0.7)
         color: #fff
 
-    @keyframes contacto-bg
-        0%
-            opacity: 1
-            background-image: url('../img/4.jpg')
-        50% 
-            opacity: 2
-            background-image: url('../img/5.png')
-        100% 
-            opacity: 1
-            background-image: url('../img/6.jpg')
+    // @keyframes contacto-bg
+    //     0%
+    //         opacity: 1
+    //         background-image: url('../img/4.jpg')
+    //     50% 
+    //         opacity: 2
+    //         background-image: url('../img/5.png')
+    //     100% 
+    //         opacity: 1
+    //         background-image: url('../img/6.jpg')
 
     .content-header
         font-family: 'Oleo Script', cursive
@@ -347,7 +397,14 @@ body
 
 
 
-
+.dark-bg
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 2
+    background-color: rgba(64, 64, 72, 0.7) !important
 // BG FADE
 .slide-background
     position: absolute

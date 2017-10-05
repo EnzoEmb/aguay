@@ -196,55 +196,72 @@ body:before {
   font-style: italic;
 }
 
-.slide-servicios {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-animation-duration: 30s;
-          animation-duration: 30s;
-  -webkit-animation-name: servicios-bg;
-          animation-name: servicios-bg;
-  -webkit-animation-delay: 1;
-          animation-delay: 1;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: forward;
-          animation-direction: forward;
-}
-.slide-servicios h1 {
+.slide-servicios h2 {
   color: white;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", sans-serif;
   font-weight: 900;
   font-style: italic;
+  font-size: 65px;
+  line-height: 1.2em;
 }
-@-webkit-keyframes servicios-bg {
-  0% {
-    opacity: 1;
-    background-image: url("../img/4.jpg");
-  }
-  50% {
-    opacity: 2;
-    background-image: url("../img/5.png");
-  }
-  100% {
-    opacity: 1;
-    background-image: url("../img/6.jpg");
-  }
+.slide-servicios h3 {
+  color: #58ffc7;
+  font-size: 17px;
+  max-width: 400px;
+  margin: 0 auto 10px auto;
+  line-height: 1.5em;
+  font-family: "Merriweather", serif;
+  font-style: italic;
 }
-@keyframes servicios-bg {
-  0% {
-    opacity: 1;
-    background-image: url("../img/4.jpg");
-  }
-  50% {
-    opacity: 2;
-    background-image: url("../img/5.png");
-  }
-  100% {
-    opacity: 1;
-    background-image: url("../img/6.jpg");
-  }
+.slide-servicios .servicios-container {
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+.slide-servicios .servicios-container .item {
+  margin-bottom: 20px;
+  width: 15%;
+  color: white;
+  display: inline-block;
+  padding: 15px;
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
+  border-left: 2px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.slide-servicios .servicios-container .item:after {
+  content: "";
+  height: 2px;
+  width: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slide-servicios .servicios-container .item:before {
+  content: "";
+  height: 2px;
+  width: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.slide-servicios .servicios-container .item img {
+  max-width: 30px;
+  margin-top: -55px;
+}
+.slide-servicios .servicios-container .item span {
+  display: block;
+  font-size: 15px;
+}
+
 .slide-contacto {
   background-size: cover;
   background-position: center;
@@ -269,34 +286,6 @@ body:before {
   background: #7f7f7f;
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
-}
-@-webkit-keyframes contacto-bg {
-  0% {
-    opacity: 1;
-    background-image: url("../img/4.jpg");
-  }
-  50% {
-    opacity: 2;
-    background-image: url("../img/5.png");
-  }
-  100% {
-    opacity: 1;
-    background-image: url("../img/6.jpg");
-  }
-}
-@keyframes contacto-bg {
-  0% {
-    opacity: 1;
-    background-image: url("../img/4.jpg");
-  }
-  50% {
-    opacity: 2;
-    background-image: url("../img/5.png");
-  }
-  100% {
-    opacity: 1;
-    background-image: url("../img/6.jpg");
-  }
 }
 .slide-contacto .content-header {
   font-family: "Oleo Script", cursive;
@@ -491,6 +480,16 @@ body:before {
     background-image: url("../img/habitacion/3.jpg");
   }
 }
+.dark-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(64, 64, 72, 0.7) !important;
+}
+
 .slide-background {
   position: absolute;
   left: 0;
