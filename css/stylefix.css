@@ -73,6 +73,7 @@ body:before {
 .slide-content {
   position: relative;
   z-index: 10;
+  padding-top: 70px;
 }
 
 .main-header {
@@ -207,8 +208,8 @@ body:before {
 .slide-servicios h3 {
   color: #58ffc7;
   font-size: 17px;
-  max-width: 400px;
-  margin: 0 auto 10px auto;
+  max-width: 500px;
+  margin: 0 auto 35px auto;
   line-height: 1.5em;
   font-family: "Merriweather", serif;
   font-style: italic;
@@ -225,21 +226,21 @@ body:before {
       flex-wrap: wrap;
 }
 .slide-servicios .servicios-container .item {
-  margin-bottom: 20px;
-  width: 15%;
+  margin-bottom: 35px;
+  width: 95px;
   color: white;
   display: inline-block;
   padding: 15px;
-  border-right: 2px solid rgba(0, 0, 0, 0.5);
-  border-left: 2px solid rgba(0, 0, 0, 0.5);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  border-right: 2px solid #009966;
+  border-left: 2px solid #009966;
+  border-bottom: 2px solid #009966;
   position: relative;
 }
 .slide-servicios .servicios-container .item:after {
   content: "";
   height: 2px;
   width: 35px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #009966;
   position: absolute;
   top: 0;
   left: 0;
@@ -248,7 +249,7 @@ body:before {
   content: "";
   height: 2px;
   width: 35px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #009966;
   position: absolute;
   top: 0;
   right: 0;
