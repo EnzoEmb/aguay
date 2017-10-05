@@ -476,3 +476,91 @@ body
 //     left: 0
 // .carousel-fade .carousel-inner > .item.next, .carousel-fade .carousel-inner > .item.active.right, .carousel-fade .carousel-inner > .item.prev, .carousel-fade .carousel-inner > .item.active.left
 //     transform: translate3d(0, 0, 0)
+
+.btn-right, .menu-mobile
+    display: none !important
+
+@media (max-width: 1250px)
+    .main-header
+        .logo
+            width: 80px
+            height: 70px
+            top: 5px
+            img
+                width: 40px
+        nav
+            a
+                font-size: 12px
+                padding: 0 10px
+                &.telefono
+                    img
+                        display: none
+
+@media (max-width: 992px)
+    body
+        &:before
+            box-shadow: inset 0 0 0 10px #009966
+    .main-header
+        nav
+            top: 10px
+            justify-content: space-between
+            padding: 0 20px
+        .logo
+            z-index: 50
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.28)
+        .left, .right
+            display: none
+        .btn-right
+            display: inline-block !important
+            font-size: 14px
+            width: 50px
+            height: 50px
+            text-align: center
+            color: #3e3f52
+            background: #eaecef
+        .menu-mobile
+            display: flex !important
+            position: fixed
+            left: 0
+            top: 0
+            bottom: 0
+            right: 0
+            background-color: $c-green
+            height: calc(100vh - 50px)
+            transform: translateX(-100%)
+            top: 50px
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            transition: transform .7s
+            a
+                display: block
+                color: white
+                font-size: 17px
+                width: 100%
+                text-align: center
+                transform: translateY(50px)
+                opacity: 0
+                transition: transform .7s, opacity .7s
+                transition-delay: 0
+                &:hover
+                    background-color: rgba(0, 0, 0, 0.2)
+
+
+            &.active
+                transform: translateX(0)
+                a
+                    transform: translateY(0)
+                    opacity: 1
+                    &:nth-child(1)
+                        transition-delay: 0.3s
+                    &:nth-child(2)
+                        transition-delay: 0.4s
+                    &:nth-child(3)
+                        transition-delay: 0.5s
+                    &:nth-child(4)
+                        transition-delay: 0.6s
+                    &:nth-child(5)
+                        transition-delay: 0.7s
+                    &:nth-child(6)
+                        transition-delay: 0.8s

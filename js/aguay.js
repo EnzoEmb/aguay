@@ -28,3 +28,7 @@ $('.main-header .anchor-slide').on('click', function(e){
     var data = $(this).attr('slide');
     swiper.slideTo(data);
 })
+$('.btn-right, .menu-mobile a').on('click', function(e){
+    e.preventDefault();
+    $('.menu-mobile').toggleClass('active')
+})
