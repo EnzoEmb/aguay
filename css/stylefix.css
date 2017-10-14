@@ -187,7 +187,7 @@ body:before {
   padding-right: 20px;
 }
 
-.slide-inicio {
+.slide-Finicio {
   background-color: #009966;
 }
 .slide-inicio h1 {
@@ -382,7 +382,7 @@ body:before {
   }
 }
 .slide-tarifas #seccion-tarifas {
-  z-index: 9999;
+  z-index: 2;
   font-family: "Teko", sans-serif;
   padding-top: 60px;
   width: 100%;
@@ -396,7 +396,6 @@ body:before {
   float: left;
 }
 
-
 .dark-bg {
   position: absolute;
   top: 0;
@@ -404,7 +403,7 @@ body:before {
   right: 0;
   bottom: 0;
   z-index: 2;
-  background-color: rgba(64, 64, 72, 0.7) !important;
+  background-color: rgba(60, 64, 39, 0.5) !important;
 }
 
 .slide-background {
@@ -672,4 +671,48 @@ textarea.form-control{
     margin-left: 300px;
 }
 
+.dark-bg1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(60, 64, 39, 0.5) !important;
+}
 
+h1.deepshadow {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  color: white;
+  font-size: 90px;
+  letter-spacing: .1em;
+    text-shadow: 
+      4px 4px 0px #000000, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+h1.deepshadow-1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  color: white;
+  font-size: 40px;
+  margin-top: 0px;
+  letter-spacing: .1em;
+    text-shadow: 
+      4px 4px 0px #000000, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.location {
+  z-index: 2;
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+  padding-top: 60px;
+  width: 600px;
+  height: 395px;
+  background: #7f7f7f;
+  background: rgba(0, 0, 39, 0.5);
+  color: #58ffc7;
+  margin-right: 70px;
+  margin-top: 50px;
+  float: left;
+}
