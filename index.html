@@ -229,18 +229,18 @@
               <h2>Para consultas, dudas o sugerencias, contáctenos</h2>
               <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                  <form action="contacto.php" class="form-horizontal">
+                  <form action="contacto.php" method="post" class="form-horizontal">
                     <div class="form-group">
-                      <label for="exampleInputName2">Nombre y apellido:</label>
-                      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y apellido">
+                      <label for="nombre">Nombre y apellido:</label>
+                      <input type="text" class="form-control" name="nombre" placeholder="Nombre y apellido">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputEmail2">Email:</label>
-                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Dirección de correo electrónico">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" name="email" placeholder="Dirección de correo electrónico">
                     </div>
                     <div class="form-group ">
-                      <label for="exampleInputText">Mensaje:</label>
-                     <textarea  class="form-control" placeholder="Consulta, duda o sugerencia"></textarea> 
+                      <label for="mensaje">Mensaje:</label>
+                     <textarea  class="form-control" name="mensaje" placeholder="Consulta, duda o sugerencia"></textarea> 
                     </div>
                     <button type="submit" class="btn btn-default">Enviar mensaje</button>
                   </form>

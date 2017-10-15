@@ -1,5 +1,7 @@
 <?php
  
+/*
+Esto no se usa
     $email_a = "litvacksamuelm@gmail.com";
     $email_titulo = "Hotel Aguay";
 
@@ -18,8 +20,18 @@ $headers = 'From: '.$email_de."\r\n".
 'X-Mailer: PHP/';
 @mail($email_a, $email_titulo, $email_mensaje, $headers);  
 ?>
-<script>location.href="index.html"</script>
-<?php
- 
-}
+*/
+
+$nombre = $_POST['nombre'];
+$email_de = $_POST['email']; 
+$texto = $_POST['mensaje'];
+$guardar = fopen("mensajes.txt","a");
+fputs($guardar,"Hotel Aguay\n");
+fputs($guardar,$nombre."\n");
+fputs($guardar,$email_de."\n");
+fputs($guardar,$texto."\n");
+fputs($guardar,"################\n\n");
+fclose($guardar);
+header('Location: index.html');
 ?>
+
