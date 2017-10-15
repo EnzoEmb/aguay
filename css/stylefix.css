@@ -702,17 +702,36 @@ h1.deepshadow-1 {
       7px 7px 0px rgba(0, 0, 0, 0.2);
 }
 
+ 
 .location {
   z-index: 2;
-  font-family: "Playfair Display", sans-serif;
-  font-style: italic;
   padding-top: 60px;
   width: 600px;
-  height: 395px;
-  background: #7f7f7f;
-  background: rgba(0, 0, 39, 0.5);
-  color: #58ffc7;
+  height: 415px;
   margin-right: 70px;
-  margin-top: 50px;
+  margin-top: 150px;
   float: left;
+  margin-bottom: 100px;
+  display: inline-block;
+  padding: 15px;
+  border-top: 3px solid #009966;
+  border-right: 3px solid #009966;
+  border-left: 3px solid #009966;
+  border-bottom: 3px solid #009966;
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.mapamapa {
+  z-index: 3; 
+  margin-right: 50px; 
+  margin-top: 50px; 
+  margin-left: 100px;
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+  border-top: 2px solid #009966;
+  border-right: 2px solid #009966;
+  border-left: 2px solid #009966;
+  border-bottom: 2px solid #009966;
 }
