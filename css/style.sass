@@ -5,6 +5,7 @@ $c-green: #009966
 *
     transform-style: preserve-3d
     backface-visibility: hidden
+    box-sizing: border-box !important
 body
     font-family: 'Roboto', sans-serif
     background: #eee
@@ -15,6 +16,7 @@ body
     width: 100vw
     height: 100vh
     overflow: hidden
+    background-color: $c-green
     &:before
         content: ''
         box-shadow: inset 0 0 0 20px #009966
@@ -39,6 +41,8 @@ body
     align-items: center
     width: 100%
     height: 100vh !important
+    overflow: hidden
+    box-sizing: border-box
 .swiper-scrollbar
     right: 50px !important
 
@@ -140,7 +144,7 @@ body
 
 
 // SLIDES
-.slide-inicio
+.slide-Finicio
     // background-image: url('../img/bg-o.jpg')
     background-color: $c-green
     // background-size: cover
@@ -168,6 +172,26 @@ body
     //         opacity: 1
     //         background-image: url('../img/3.png')
 
+.slide-inicio
+    h1
+        font-family: $f-pop
+        color: white
+        font-size: 90px
+        font-weight: 900
+        // font-style: italic
+        text-shadow: 4px 4px 0px #000000, 7px 7px 0px rgba(0, 0, 0, 0.2)
+    h2
+        font-family: $f-pop
+        color: white
+        font-size: 40px
+        margin-top: 0px
+        letter-spacing: .1em
+        text-shadow: 4px 4px 0px #000000, 7px 7px 0px rgba(0, 0, 0, 0.2)
+        max-width: 600px
+        margin-top: 50px
+        margin-left: auto
+        margin-right: auto
+
 
 
 .slide-servicios
@@ -182,27 +206,36 @@ body
     // animation-direction: forward
     h2
         color: white
-        font-family: $f-play
+        font-family: $f-pop
         font-weight: 900
-        font-style: italic
+        // font-style: italic
         font-size: 65px
         line-height: 1.2em
+        text-shadow: 0 0 24px black
     h3
-        color: #58ffc7
+        color: white
         font-size: 17px
         max-width: 500px
         margin: 0 auto 35px auto
         line-height: 1.5em
-        font-family: $f-merri
-        font-style: italic
+        font-family: $f-pop
+        letter-spacing: 0.05em
+        font-size: 15px
     .servicios-container
-        max-width: 700px
+        width: 700px
+        max-width: 100%
         display: flex
-        justify-content: space-between
-        flex-wrap: wrap
+        // flex-wrap: wrap
+        // justify-content: space-around
+        flex-direction: column
+        .top, .bottom
+            display: flex
+            justify-content: space-around
         .item
             margin-bottom: 35px
-            width: 95px
+            width: 100%
+            margin-left: 5px
+            margin-right: 5px
             color: white
             display: inline-block
             padding: 15px
@@ -232,7 +265,11 @@ body
                 margin-top: -55px
             span
                 display: block
-                font-size: 15px
+                // font-size: 15px
+                font-weight: 600
+                font-family: $f-pop
+                font-size: 12px
+                text-transform: uppercase
     // @keyframes servicios-bg
     //     0%
     //         opacity: 1
@@ -245,73 +282,144 @@ body
     //         background-image: url('../img/6.jpg')
 
 .slide-contacto
-    background-size: cover
-    background-position: center
-    background-repeat: no-repeat
-    animation-duration: 30s
-    animation-name: contacto-bg
-    animation-delay: 1
-    animation-iteration-count: infinite
-    animation-direction: forward
-    #contact
-        font-family: 'Teko', sans-serif
-        padding-top: 60px
+    .slide-contacto--box
+        background: rgba(47, 48, 53, 0.8)
+        padding: 50px
+        font-family: $f-pop
+        color: #fff
+        z-index: 50
+        max-width: 900px
+        margin: 0 20px
+        // height: 400px
+        margin-top: 100px
+        max-height: 90vh
         width: 100%
-        width: 80vw
-        height: 550px
-        background: #7f7f7f
-        background: rgba(0,0,0,0.7)
-        color: #fff
+        display: flex
+        &:after
+            content: ''
+            position: absolute
+            pointer-events: none
+            border: 1px solid $c-green
+            left: 15px
+            top: 15px
+            bottom: 15px
+            right: 15px
 
-    // @keyframes contacto-bg
-    //     0%
-    //         opacity: 1
-    //         background-image: url('../img/4.jpg')
-    //     50% 
-    //         opacity: 2
-    //         background-image: url('../img/5.png')
-    //     100% 
-    //         opacity: 1
-    //         background-image: url('../img/6.jpg')
+        .left
+            border-right: 1px solid white
+            margin-right: 50px
+            padding-right: 50px
+            display: flex
+            min-width: 150px
+            max-width: 100%
+            align-items: center
+            img
+                width: 150px
+                max-width: 100%
 
-    .content-header
-        font-family: 'Oleo Script', cursive
-        color: #fcc500
-        font-size: 45px
-    .section-content
-        text-align: center
-    .section-header
-        font-size: 70px
-        font-family: "Century Schoolbook L"
-        font-style: italic
-    .section-header1
-        font-size: 35px
-        font-family: "Century Schoolbook L"
-        font-style: italic
-    .contact-section
-        padding-top: 40px
-    .contact-section .col-md-6
-        width: 50%
+        .right
+            text-align: left
+            h2
+                font-weight: 700
+                margin-bottom: 20px
+            form
+                .button-container
+                    text-align: right
+                    button
+                        border: 0
+                        color: white
+                        background-color: #009966
+                        min-height: 50px
+                        padding: 0 35px
+                        border-radius: 500px
+                        text-transform: uppercase
+                        font-weight: 600
+                        font-size: 15px
+                        outline: none
+                        cursor: pointer
+                        display: inline-block
+                .input-doble
+                    width: 100%
+                    display: flex
+                    .first
+                        margin-right: 20px
+                    .input-container
+                        width: 100%
+                input
+                    width: 100%
+                    border: 0
+                    padding-left: 10px
+                    min-height: 45px
+                    font-size: 15px
+                    font-weight: 600
+                    margin-bottom: 20px
+                textarea
+                    width: 100%
+                    min-height: 100px
+                    border: 0
+                    padding: 10px 10px 15px 10px
+                    font-size: 15px
+                    font-weight: 600
+                    margin-bottom: 20px
+                input, textarea
+                    outline: none
+                    transition: .5s box-shadow
+                    box-shadow: inset 0 -3px rgba(0, 0, 0, 0)
+                    resize: none
+                    &:active, &:focus
+                        box-shadow: inset 0 -3px #009966
 
-    .form-line
-        border-right: 1px solid #B29999
-    .form-group
-        margin-top: 10px
-    label
-        font-size: 2.0em
-        line-height: 1em
-        font-weight: normal
-    .form-control
-        font-size: 1.3em
-        color: #080808
-    textarea.form-control
-        height: 125px
-    .submit
-        font-size: 2.0em
-        float: right
-        width: 150px
-        background-color: transparent
-        color: #fff
+
+
+    // #contact
+    //     font-family: $f-pop
+    //     padding: 50px
+    //     background: rgba(47, 48, 53, 0.8)
+    //     color: #fff
+    //     margin: 50px 0
+
+
+
+
+
+    // .content-header
+    //     font-family: 'Oleo Script', cursive
+    //     color: #fcc500
+    //     font-size: 45px
+    // .section-content
+    //     text-align: center
+    // .section-header
+    //     font-size: 70px
+    //     font-family: "Century Schoolbook L"
+    //     font-style: italic
+    // .section-header1
+    //     font-size: 35px
+    //     font-family: "Century Schoolbook L"
+    //     font-style: italic
+    // .contact-section
+    //     padding-top: 40px
+    // .contact-section .col-md-6
+    //     width: 50%
+
+    // .form-line
+    //     border-right: 1px solid #B29999
+    // .form-group
+    //     margin-top: 10px
+    // label
+    //     font-size: 2.0em
+    //     line-height: 1em
+    //     font-weight: normal
+    // .form-control
+    //     font-size: 1.3em
+    //     color: #080808
+    // textarea.form-control
+    //     height: 125px
+    // .submit
+    //     font-size: 2.0em
+    //     float: right
+    //     width: 150px
+    //     background-color: transparent
+    //     color: #fff
 
 .slide-tarifas    
 
@@ -352,44 +460,118 @@ body
 
 
 .slide-ubicacion
-    background-size: cover
-    background-position: center
-    background-repeat: no-repeat
-    animation-duration: 30s
-    animation-name: ubicacion-bg
-    animation-delay: 1
-    animation-iteration-count: infinite
-    animation-direction: forward
-    @keyframes ubicacion-bg
-        0%
-            opacity: 1
-            background-image: url('../img/4.jpg')
-        50%
-            opacity: 2
-            background-image: url('../img/5.png')
-        100% 
-            opacity: 1
-            background-image: url('../img/6.jpg')
+    .slide-ubicacion--content
+        padding: 50px
+        font-family: $f-pop
+        color: #fff
+        z-index: 50
+        max-width: 900px
+        margin: 0 20px
+        // height: 400px
+        margin-top: 100px
+        max-height: 90vh
+        width: 100%
+        display: flex
+
+    // .location 
+    //     z-index: 2
+    //     padding-top: 60px
+    //     width: 600px
+    //     height: 415px
+    //     margin-right: 70px
+    //     margin-top: 150px
+    //     float: left
+    //     margin-bottom: 100px
+    //     display: flex
+    //     justify-content: center
+    //     align-items: center
+    //     flex-direction: column
+    //     padding: 30px
+    //     position: relative
+    //     background: rgba(47, 48, 53, 0.8)
+    //     h1
+    //         color: white
+    //         font-family: $f-pop
+    //         font-size: 25px
+    //         font-weight: 800
+    //     &:before
+    //         content: ''
+    //         width: 0
+    //         height: 0
+    //         border-style: solid
+    //         border-width: 10px 12px 10px 0
+    //         border-color: transparent rgba(47, 48, 53, 0.8) transparent transparent
+    //         position: absolute
+    //         left: -12px
+    //         top: calc(50% - 10px)
+    //     &:after
+    //         content: ''
+    //         position: absolute
+    //         pointer-events: none
+    //         border: 1px solid white
+    //         left: 15px
+    //         top: 15px
+    //         bottom: 15px
+    //         right: 15px
+    // .mapamapa 
+    //     z-index: 3
+    //     margin-right: 50px
+    //     margin-top: 50px
+    //     margin-left: 100px
+    //     display: inline-block
+    //     padding: 15px
+    //     position: relative
+    //     border-top: 2px solid #009966
+    //     border-right: 2px solid #009966
+    //     border-left: 2px solid #009966
+    //     border-bottom: 2px solid #009966
+    
+
+
 
 .slide-habitacion
-    background-size: cover
-    background-position: center
-    background-repeat: no-repeat
-    animation-duration: 30s
-    animation-name: habitacion-bg
-    animation-delay: 1
-    animation-iteration-count: infinite
-    animation-direction: forward
-    @keyframes habitacion-bg
-        0%
-            opacity: 1
-            background-image: url('../img/habitacion/1.png')
-        50%
-            opacity: 2
-            background-image: url('../img/habitacion/2.png')
-        100%
-            opacity: 1
-            background-image: url('../img/habitacion/3.jpg')
+    position: relative
+    // background-size: cover
+    // background-position: center
+    // background-repeat: no-repeat
+    // animation-duration: 30s
+    // animation-name: habitacion-bg
+    // animation-delay: 1
+    // animation-iteration-count: infinite
+    // animation-direction: forward
+    // @keyframes habitacion-bg
+    //     0%
+    //         opacity: 1
+    //         background-image: url('../img/habitacion/1.png')
+    //     50%
+    //         opacity: 2
+    //         background-image: url('../img/habitacion/2.png')
+    //     100%
+    //         opacity: 1
+    //         background-image: url('../img/habitacion/3.jpg')
+
+
+    .carousel
+        position: absolute
+        top: 0
+        left: 0
+        img
+            width: 100%
+            height: 100%
+        .carousel-item
+            background-size: cover
+            background-position: center
+        .caption
+            color: white
+            font-family: $f-pop
+            position: absolute
+            left: 0
+            right: 0
+            margin: 0 auto
+            bottom: 80px
+            font-weight: 800
+            font-size: 45px
+            text-shadow: 0 0 24px rgba(0, 0, 0, 0.6)
 
 
 
@@ -397,14 +579,6 @@ body
 
 
 
-.dark-bg
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    z-index: 2
-    background-color: rgba(64, 64, 72, 0.7) !important
 // BG FADE
 .slide-background
     position: absolute
@@ -441,15 +615,15 @@ body
         top: 0
         bottom: 0
         // z-index: 0
-    .carousel-item
-        background-size: cover
-        background-position: center
-        &:nth-child(1)
-            background-color: red
-        &:nth-child(2)
-            background-color: blue
-        &:nth-child(3)
-            background-color: yellow
+    // .carousel-item
+    //     background-size: cover
+    //     background-position: center
+    //     &:nth-child(1)
+    //         background-color: red
+    //     &:nth-child(2)
+    //         background-color: blue
+    //     &:nth-child(3)
+    //         background-color: yellow
 // Carousel fade transition
 // .carousel-fade 
 //     .carousel-item 
@@ -477,90 +651,85 @@ body
 // .carousel-fade .carousel-inner > .item.next, .carousel-fade .carousel-inner > .item.active.right, .carousel-fade .carousel-inner > .item.prev, .carousel-fade .carousel-inner > .item.active.left
 //     transform: translate3d(0, 0, 0)
 
-.btn-right, .menu-mobile
-    display: none !important
-
-@media (max-width: 1250px)
-    .main-header
-        .logo
-            width: 80px
-            height: 70px
-            top: 5px
-            img
-                width: 40px
-        nav
-            a
-                font-size: 12px
-                padding: 0 10px
-                &.telefono
-                    img
-                        display: none
-
-@media (max-width: 992px)
-    body
-        &:before
-            box-shadow: inset 0 0 0 10px #009966
-    .main-header
-        nav
-            top: 10px
-            justify-content: space-between
-            padding: 0 20px
-        .logo
-            z-index: 50
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.28)
-        .left, .right
-            display: none
-        .btn-right
-            display: inline-block !important
-            font-size: 14px
-            width: 50px
-            height: 50px
-            text-align: center
-            color: #3e3f52
-            background: #eaecef
-        .menu-mobile
-            display: flex !important
-            position: fixed
-            left: 0
-            top: 0
-            bottom: 0
-            right: 0
-            background-color: $c-green
-            height: calc(100vh - 50px)
-            transform: translateX(-100%)
-            top: 50px
-            align-items: center
-            justify-content: center
-            flex-direction: column
-            transition: transform .7s
-            a
-                display: block
-                color: white
-                font-size: 17px
-                width: 100%
-                text-align: center
-                transform: translateY(50px)
-                opacity: 0
-                transition: transform .7s, opacity .7s
-                transition-delay: 0
-                &:hover
-                    background-color: rgba(0, 0, 0, 0.2)
 
 
-            &.active
-                transform: translateX(0)
-                a
-                    transform: translateY(0)
-                    opacity: 1
-                    &:nth-child(1)
-                        transition-delay: 0.3s
-                    &:nth-child(2)
-                        transition-delay: 0.4s
-                    &:nth-child(3)
-                        transition-delay: 0.5s
-                    &:nth-child(4)
-                        transition-delay: 0.6s
-                    &:nth-child(5)
-                        transition-delay: 0.7s
-                    &:nth-child(6)
-                        transition-delay: 0.8s
+
+
+.carousel-fade
+    .carousel-item
+        display: block
+        position: absolute
+        opacity: 0
+        transition: opacity .75s ease-in-out
+        &.active
+            opacity: 1
+
+
+html, body, .carousel, .carousel-inner, .carousel-item
+    width: 100%
+    height: 100%
+
+
+// .carousel-item
+//     &:nth-child(1)
+//         background-color: red
+//     &:nth-child(2)
+//         background-color: blue
+//     &:nth-child(3) 
+//         background-color: yellow
+
+.mapa-aguay
+    z-index: 9999
+
+.slide-tarifas pre
+    background-color: transparent
+    color: white
+    position: absolute
+    top: 150px
+    left: 800px
+    z-index: 9999
+    border: none
+    font-size: 1.5em
+    font-family: "Century Schoolbook L"
+    font-style: italic
+
+#contact
+    z-index: 9999
+    background: #333333
+    color: #f4f4f4
+    padding-bottom: 30px
+
+.contact-section h2 
+    margin-top: 15px
+
+.contact-section label 
+    margin-left: 300px
+
+.contact-section input  
+    margin-left: 150px
+
+textarea.form-control
+    height: 100px
+    margin-left: 150px
+
+.contact-section button 
+    margin-left: 300px
+
+// .dark-bg1
+//     position: absolute
+//     top: 0
+//     left: 0
+//     right: 0
+//     bottom: 0
+//     z-index: 2
+//     background-color: rgba(60, 64, 39, 0.5) !important
+.dark-bg, .dark-bg1
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 2
+    background-color: rgba(62, 62, 62, 0.5)  !important
+
+@import "mobile.sass"
