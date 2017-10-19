@@ -460,18 +460,58 @@ body
 
 
 .slide-ubicacion
-    .slide-ubicacion--content
-        padding: 50px
-        font-family: $f-pop
-        color: #fff
-        z-index: 50
-        max-width: 900px
-        margin: 0 20px
-        // height: 400px
-        margin-top: 100px
-        max-height: 90vh
+    iframe
+        position: absolute
+        top: 0
+        left: 0
         width: 100%
+        height: 100%
+        bottom: 0
+    .map-container
+        pointer-events: none
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        bottom: 0
+    .content
+        position: absolute
+        left: 40px
+        top: calc(50% - 50px)
+        z-index: 50
         display: flex
+        flex-direction: column
+        address
+            background-color: $c-green
+            color: white
+            font-family: $f-pop
+            font-size: 15px
+            text-align: left
+            font-weight: 600
+            display: inline-flex
+            padding: 0 15px
+            min-height: 50px
+            justify-content: center
+            margin-bottom: 5px
+            align-items: center
+            justify-content: flex-start
+            i
+                margin-right: 15px
+    // .slide-ubicacion--content
+    //     padding: 50px
+    //     font-family: $f-pop
+    //     color: #fff
+    //     z-index: 50
+    //     max-width: 900px
+    //     margin: 0 20px
+    //     // height: 400px
+    //     margin-top: 100px
+    //     max-height: 90vh
+    //     width: 100%
+    //     display: flex
+    //     .left
+    //         width: 
 
     // .location 
     //     z-index: 2
