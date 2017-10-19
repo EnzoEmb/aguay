@@ -23,6 +23,13 @@ $('.slide-background').owlCarousel({
     loop: true
 });
 
+$('.tarifas-carousel').owlCarousel({
+    items: 1,
+    margin: 0,
+    nav: true,
+    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+});
+
 $('.main-header .anchor-slide').on('click', function(e){
     e.preventDefault();
     var data = $(this).attr('slide');

@@ -93,7 +93,11 @@
         h2
             font-size: 30px
 
-
+    .slide-tarifas
+        .seccion-tarifas
+            margin-top: 50px
+            .item
+                min-height: 350px
 
 @media (max-width: 768px)
     .slide-ubicacion
@@ -197,3 +201,16 @@
                     display: inline-block
                 &:before, &:after
                     content: none
+
+
+    .slide-tarifas 
+        .seccion-tarifas
+            max-width: 90%
+            .owl-nav
+                .owl-prev, .owl-next
+                    border-radius: 500px !important
+                    height: 40px
+                .owl-prev
+                    left: 10px
+                .owl-next
+                    right: 10px
