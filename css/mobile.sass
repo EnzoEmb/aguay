@@ -114,6 +114,12 @@
                 h2
                     font-size: 25px
 
+    .slide-servicios
+        .servicios-container
+            .item
+                padding: 10px
+            .item-aire, .item-room
+                display: none
 
 @media (max-width: 576px)
     .slide-contacto
@@ -149,7 +155,10 @@
             left: 20px
             right: 20px
 
-
+    .slide-habitacion
+        .carousel
+            .caption
+                font-size: 20px
 
 
     .slide-inicio
@@ -158,3 +167,31 @@
             font-size: 70px
         h2
             font-size: 20px
+
+    .slide-servicios
+        h2
+            font-size: 35px
+        h3
+            display: none
+        .servicios-container
+            width: 100%
+            display: block
+            .item-aire, .item-room, .item-hide
+                display: none !important
+            .top, .bottom
+                display: block
+            .item
+                width: 90vw
+                display: block
+                border-top: 2px solid #009966
+                text-align: left
+                margin-bottom: 5px
+                margin-left: auto
+                margin-right: auto
+                img
+                    margin-top: 0
+                    margin-right: 10px
+                span
+                    display: inline-block
+                &:before, &:after
+                    content: none

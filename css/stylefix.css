@@ -823,6 +823,13 @@ textarea.form-control {
   .slide-contacto .slide-contacto--box .right h2 {
     font-size: 25px;
   }
+
+  .slide-servicios .servicios-container .item {
+    padding: 10px;
+  }
+  .slide-servicios .servicios-container .item-aire, .slide-servicios .servicios-container .item-room {
+    display: none;
+  }
 }
 @media (max-width: 576px) {
   .slide-contacto .slide-contacto--box {
@@ -861,6 +868,10 @@ textarea.form-control {
     right: 20px;
   }
 
+  .slide-habitacion .carousel .caption {
+    font-size: 20px;
+  }
+
   .slide-inicio {
     padding: 0 30px;
   }
@@ -869,5 +880,41 @@ textarea.form-control {
   }
   .slide-inicio h2 {
     font-size: 20px;
+  }
+
+  .slide-servicios h2 {
+    font-size: 35px;
+  }
+  .slide-servicios h3 {
+    display: none;
+  }
+  .slide-servicios .servicios-container {
+    width: 100%;
+    display: block;
+  }
+  .slide-servicios .servicios-container .item-aire, .slide-servicios .servicios-container .item-room, .slide-servicios .servicios-container .item-hide {
+    display: none !important;
+  }
+  .slide-servicios .servicios-container .top, .slide-servicios .servicios-container .bottom {
+    display: block;
+  }
+  .slide-servicios .servicios-container .item {
+    width: 90vw;
+    display: block;
+    border-top: 2px solid #009966;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .slide-servicios .servicios-container .item img {
+    margin-top: 0;
+    margin-right: 10px;
+  }
+  .slide-servicios .servicios-container .item span {
+    display: inline-block;
+  }
+  .slide-servicios .servicios-container .item:before, .slide-servicios .servicios-container .item:after {
+    content: none;
   }
 }
