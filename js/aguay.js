@@ -39,3 +39,4 @@ $('.btn-right, .menu-mobile a').on('click', function(e){
     e.preventDefault();
     $('.menu-mobile').toggleClass('active')
 })
+new WOW().init();
