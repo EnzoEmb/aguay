@@ -832,4 +832,30 @@ textarea.form-control
     z-index: 2
     background-color: rgba(62, 62, 62, 0.5)  !important
 
+#validar
+    width: 350px
+    height: 50px
+    max-width: 100%
+    font-family: $f-pop
+    background-color: #f33e3e
+    position: fixed
+    top: -70px
+    left: 0
+    right: 0
+    margin: 0 auto
+    z-index: 350
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: 500
+    color: white
+    border-radius: 2px
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2)
+    transition: top .5s, background-color .5s
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.24)
+    &.active
+        top: 80px
+    &.success
+        background-color: #1fc772
+
 @import "mobile.sass"
