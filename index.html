@@ -66,18 +66,19 @@
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
 			<!-- SLIDE 1 - INICIO -->
-<!-- 			<div class="swiper-slide slide-1 slide-inicio" id="inicio">
+			<div class="swiper-slide slide-1 slide-inicio" id="inicio">
 				<div class="dark-bg1"></div>
 				<div class="slide-content">
                     <h1>Hotel Aguay</h1>
-                    <h2>El único hotel cuatro estrellas en Gualeguaychú</p>
+                    <h2>El único hotel cuatro estrellas en Gualeguaychú</h2>
+                	<img src="img/stars.svg" alt="">
 				</div>
 				<div class="slide-background owl-carousel">
 					<div class="item active" style="background-image: url('img/63.jpg')"></div>
                     <div class="item" style="background-image: url('img/18197802.jpg')"></div>
                     <div class="item" style="background-image: url('img/18197147.jpg')"></div>
 				</div>
-		    </div> -->
+		    </div>
 
 			<!-- SLIDE 2 - SERVICIOS -->
 			<div class="swiper-slide slide-servicios"  id="servicios">
@@ -146,7 +147,7 @@
             </div>
 
 			<!-- SLIDE 4 HABITACION -->
-<!-- 			<div class="swiper-slide slide-habitacion" id="habitacion">
+			<div class="swiper-slide slide-habitacion" id="habitacion">
              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                <ol class="carousel-indicators">
                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -184,10 +185,10 @@
                 <span class="sr-only">Next</span>
               </a>
              </div>
-            </div> -->
+            </div>
        
        		<!-- SLIDE 5 UBICACION -->
-<!--  			<div class="swiper-slide slide-ubicacion" id="ubicacion">
+ 			<div class="swiper-slide slide-ubicacion" id="ubicacion">
 				<div class="content">
 					<address><i class="fa fa-map-marker"></i> Costanera Morrogh Bernard 130</address>
 					<address><i class="fa fa-map-marker"></i> Gualeguaychú</address>
@@ -196,10 +197,10 @@
  				<div class="map-container">
  					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836.4385893087994!2d-58.50566072979187!3d-33.01025111933166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa9d399541cb5%3A0xc656fc8a6848b1cd!2sHotel+Agua%C3%BD!5e0!3m2!1ses-419!2ses!4v1505005167984" frameborder="0" allowfullscreen></iframe>
  				</div>
-			</div> -->
+			</div>
 			
 			<!-- SLIDE 6 TARIFAS -->
-<!-- 			<div class="swiper-slide slide-tarifas" id="tarifas">
+ 			<div class="swiper-slide slide-tarifas" id="tarifas">
               <div id="seccion-tarifas">
                <pre>
                 <h1 style="z-index: 5">
@@ -217,33 +218,39 @@
 					<div class="item" style="background-image: url('img/tarifas/3.png')"></div>
 				</div>
             </div>
- -->
+
             <!-- SLIDE 7 CONTACTO -->
-<!-- 			<div class="swiper-slide slide-contacto" id="contacto">
+ 			<div class="swiper-slide slide-contacto" id="contacto">
 				<div class="slide-contacto--box">
 					<div class="left">
 						<img src="img/logow.svg" alt="">
 					</div>
 					<div class="right">
 						<h2>Para consultas, dudas o sugerencias, contáctenos:</h2>
-						<form action="">
+						<form action="contacto.php" method="post">
 							<div class="input-doble">
 								<div class="input-container first">
-									<input type="text" id="nombre" placeholder="Nombre y apellido">
+									<input name="nombre" type="text" id="nombre" placeholder="Nombre y apellido">
 								</div>
 								<div class="input-container">
-									<input type="email" id="email" placeholder="Email">
+									<input name="email" type="email" id="email" placeholder="Email">
 								</div>
 							</div>
 							<div class="input-container">
-								<textarea placeholder="Mensaje" id="msn"></textarea>
+								<textarea name="mensaje" placeholder="Mensaje" id="msn"></textarea>
 							</div>
 							<div class="button-container">
-								<button>Enviar</button>
+								<button type="submit">Enviar</button>
 							</div>
 						</form>
 					</div>
-				</div> -->
+				</div>
+			 <div class="slide-background owl-carousel">
+				<div class="item active" style="background-image: url('img/contacto/1.png')"></div>
+				<div class="item" style="background-image: url('img/contacto/2.png')"></div>
+				<div class="item" style="background-image: url('img/contacto/3.jpg')"></div>
+			 </div>
+           </div>
 <!-- 				<section id="contact" class="content-section text-center">
 					<div class="container">
 						<div class="row">
@@ -276,12 +283,7 @@
 					</div>
 				</section>
 
-			 <div class="slide-background owl-carousel">
-				<div class="item active" style="background-image: url('img/contacto/1.png')"></div>
-				<div class="item" style="background-image: url('img/contacto/2.png')"></div>
-				<div class="item" style="background-image: url('img/contacto/3.jpg')"></div>
-			 </div>
-           </div>
+
  -->
 
 

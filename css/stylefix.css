@@ -215,12 +215,17 @@ body:before {
   color: white;
   font-size: 40px;
   margin-top: 0px;
-  letter-spacing: 0.1em;
+  margin-bottom: 25px;
+  font-weight: 600;
   text-shadow: 4px 4px 0px #000000, 7px 7px 0px rgba(0, 0, 0, 0.2);
   max-width: 600px;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+}
+.slide-inicio img {
+  width: 200px;
+  max-width: 100%;
 }
 
 .slide-servicios h2 {
@@ -832,6 +837,10 @@ textarea.form-control {
   }
 }
 @media (max-width: 576px) {
+  .swiper-pagination {
+    right: 20px !important;
+  }
+
   .slide-contacto .slide-contacto--box {
     display: block;
     padding: 35px;
@@ -876,7 +885,7 @@ textarea.form-control {
     padding: 0 30px;
   }
   .slide-inicio h1 {
-    font-size: 70px;
+    font-size: 50px;
   }
   .slide-inicio h2 {
     font-size: 20px;
