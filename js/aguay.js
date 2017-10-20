@@ -49,30 +49,37 @@ new WOW().init();
 // });
 $( document ).ready(function() {
 
-$('#btn-enviar').on('click', function(e){
+// $('#btn-enviar').on('click', function(e){
+$("#contacto").submit(function(e){
     if ( $('#nombre').val() == "" ) {
         // alert('escribi nombre');
+        $('#validar').removeClass()
         $('#validar').html('Escribi un nombre!')
         $('#validar').addClass('active')
         setTimeout(function(){ $('#validar').removeClass('active') }, 2000);
     } else if ( isEmail( $('#email').val() ) != true ) {
         // alert('mail invalido')
+        $('#validar').removeClass()
         $('#validar').html('Escribi un mail válido!')
         $('#validar').addClass('active')
         setTimeout(function(){ $('#validar').removeClass('active') }, 2000);
     } else if ( $('#msn').val() == "" ) {
         // alert('escribi un mensaje')
+        $('#validar').removeClass()
         $('#validar').html('Escribi un mensaje')
         $('#validar').addClass('active')
         setTimeout(function(){ $('#validar').removeClass('active') }, 2000);
     }else{
         // alert('mensaje enviado correctamente')
         $('#validar').html('Mensaje enviado correctamente!!1')
+        $( "#contacto" ).submit();
+        $('#validar').removeClass()
         $('#validar').addClass('active success')
         setTimeout(function(){ $('#validar').removeClass('active success') }, 2000);
         $('#nombre, #email, #msn').val("");
     }
-    e.preventDefault()
+    // e.preventDefault()
+     return false;
 })
 
 })
